@@ -1,0 +1,131 @@
+.header
+{
+ color: black;
+}
+
+.column-lp img
+{
+    width: 100%;
+    height: 50%;
+    border: 1px solid transparent;
+    margin: 1em;
+   
+}
+
+.column-rp
+{
+    margin:-4rem;
+    padding: 6rem;
+    line-height: 2em;
+  p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }  
+}
+
+.col-lp img
+{
+    width: 35%;
+    height: 50%;
+}
+
+  .visible-ontent
+  {
+    width: 30%;
+    border-radius: 40%;
+  }
+  .ui-vertical-animated-button
+  {
+    width: 19.75rem;
+    border-radius: 3rem;
+    
+    background-color: #1F39FF;
+    padding: 0.5em;
+    
+    margin-top: 1rem;
+    text-align: center;
+   
+  }
+  .visible-ontent {
+   
+    text-align: center;
+    position: relative;
+    left: 30%;
+}
+.blue
+{
+  height: 2.5rem;
+  width: 4rem;
+  background-color: blue;
+  border-radius: 20%;
+  margin: 1em;
+}
+
+.pink
+{
+  height: 2.5rem;
+  width: 4rem;
+  background-color: pink;
+  border-radius: 20%;
+  margin: 1em;
+}
+
+.grey
+{
+  height: 2.5rem;
+  width: 4rem;
+  background-color: grey;
+  border-radius: 20%;
+  margin: 1em;
+}
+
+.black
+{
+  height: 2.5rem;
+  width: 4rem;
+  background-color: black;
+  border-radius: 20%;
+  margin: 1em;
+}
+
+.row-data
+{
+    display: flex;
+    padding: 1rem;
+    
+}
+.row-data button
+{
+    height: 2.5rem;
+  width: 4rem;
+  border-radius: 20%;
+  margin: 1em;
+}
+.data
+{
+    position: relative;
+    right: 30%;
+}
+.data > button
+{
+    height: 2.5rem;
+    width: 8rem; 
+    border-radius: 10%;
+}
+.data > img
+{
+     padding: 1rem 1rem 0 1rem;
+}
+.share
+{
+   
+ 
+    width: 19.75rem;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.product-details
+{
+  margin-right: 5rem;
+}

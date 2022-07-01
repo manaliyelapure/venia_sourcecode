@@ -1,0 +1,34 @@
+
+.banner-left
+{
+     top: 3rem;
+    // left: 12rem;
+    // width: 40rem;
+    height: 25rem;
+    background-color: black;
+    border: 1px solid black;
+    
+
+    h1{
+        color: white;
+        padding-top: 6rem;
+        font-size: 2rem;
+        font-weight: bold;
+      
+    }
+  
+}
+.banner-bottom
+{
+    height: 0.5rem;
+    width: 8rem;
+    background-color: blue;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.banner-right img
+{
+   padding: 1rem 1rem 1rem 0px;
+    width: 100%;
+}

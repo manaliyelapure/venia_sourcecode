@@ -1,0 +1,43 @@
+.footer{
+    display: grid;
+    margin-top: 3rem;
+    
+    h3{
+        text-align: center;
+    }
+     li{
+        list-style-type: none;
+        text-align: center;
+        padding: 0.5rem;
+      
+    }
+
+}
+
+.img-logo{
+    padding-right: 1rem;
+   
+    
+    li{
+        padding-right: 32px;
+    }
+}
+.img-logo img
+{
+    margin-right: 1rem;
+}
+.footer-bottom
+{
+    list-style-type: none; 
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: auto;
+   
+    
+    li a{
+        margin-right: 2rem;
+        padding: 2rem;
+    }
+}

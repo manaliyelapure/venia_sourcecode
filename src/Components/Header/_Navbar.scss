@@ -1,0 +1,25 @@
+.header
+{
+    margin: 2rem 0 2rem 0;
+}
+.container{
+    padding: 0 4em;
+}
+
+.navbar{
+    display: flex;
+    
+  li{
+        list-style-type: none;
+        padding-right: 2rem;
+        text-align: center;
+    }
+}
+
+.header-end
+{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding: auto;
+}
