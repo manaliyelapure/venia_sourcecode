@@ -6,7 +6,7 @@ function Sidebar() {
         <React.Fragment>
             <aside>
                 <div className='herobanner'>
-                    <div className='aem-GridColumn aem-GridColumn--phone--6  aem-GridColumn--tablet--12 aem-GridColumn--default--3'>
+                    <div className='aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--3'>
                         <p>Clothing / Women’s / Outerwear</p>
                         <h3>Filters</h3>
                         <hr />
@@ -43,7 +43,7 @@ function Sidebar() {
                         </div>
                         <hr />
                         <div className='attribute-third'>
-                            <h3>color</h3>
+                            <h3>Color</h3>
                             <div className='Row1'>
                                 <div className='R1'></div>
                                 <div className='R2'></div>

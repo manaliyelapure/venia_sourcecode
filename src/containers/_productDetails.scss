@@ -18,11 +18,25 @@
     padding: 6rem;
     line-height: 2em;
   p{
+    @extend  .regular-heading-m-16-;
     font-size: 1rem;
     letter-spacing: 1px;
   }  
+h1{
+  @extend  .display-l-36-;
+}
 }
 
+.ui teal tag label {
+  @extend .regular-heading-l-20-;
+}
+.ui brown block header{
+  @extend  .regular-body-s-14-;
+}
+.col-lp
+{
+    display: block;
+}
 .col-lp img
 {
     width: 35%;
@@ -44,13 +58,17 @@
     
     margin-top: 1rem;
     text-align: center;
+    position: relative;
+    left: 1rem;
+    color: white
    
   }
   .visible-ontent {
-   
+   @extend .regular-body-s-14-;
     text-align: center;
     position: relative;
-    left: 30%;
+    left: 20%;
+    font-weight: bold;
 }
 .blue
 {
@@ -92,19 +110,31 @@
 {
     display: flex;
     padding: 1rem;
-    
+     
+  h2{
+    @extend .regular-body-l-20-;
+    font-weight: 600;
+  }
 }
 .row-data button
 {
-    height: 2.5rem;
+  height: 2.5rem;
   width: 4rem;
   border-radius: 20%;
-  margin: 1em;
+  // margin: 1em;
+  // position: relative;
+  // left: 1rem;
 }
 .data
 {
     position: relative;
-    right: 30%;
+    right: 25%;
+
+    h2{
+      @extend .regular-body-l-20-;
+      font-weight: 600;
+      margin-right: 10rem;
+    }
 }
 .data > button
 {
@@ -116,16 +146,59 @@
 {
      padding: 1rem 1rem 0 1rem;
 }
-.share
-{
-   
- 
+.share{
     width: 19.75rem;
     text-align: center;
-    margin-top: 1em;
+    margin-top: 2rem;
+    
+    
+   
+    
+    span{
+      @extend .regular-heading-m-16-;
+    
+      }
+     
 }
 
+
+.description 
+{
+  display: flexbox;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3rem;
+  h1{
+    @extend  .display-l-36- ;
+  }
+  p{
+    @extend .regular-heading-m-16-;
+  }
+}
+
+.details{
+  padding-top: 4rem;
+  h3{
+    @extend .regular-heading-m-16-;
+    font-weight: 600;
+    position: relative;
+    right: 45%;
+  }
+}
+  
 .product-details
 {
-  margin-right: 5rem;
+ 
+  @extend .regular-heading-m-16-;
+
+  padding: 1rem;
+  
+  img , span{
+    position: relative;
+    right: 4rem;
+  }
+  img{
+    margin: auto;
+  }
 }
+ 

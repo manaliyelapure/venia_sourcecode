@@ -1,84 +1,146 @@
-.shop-head{
-  padding: 3rem;
-  .h1
-  {
-     font-size: 3rem;
-     font-weight: bold;
-     padding-top: 3rem;
-  }
-}
+.shopCart {
 
-.bottom-line
-{
-    height: 0.5rem;
-    width: 8rem;
-    background-color: blue;
+  .summary{
+    
+    // border: 1px solid;
     margin: auto;
-    margin-top: 2rem;
-}
-.cart-total ul li
-{
-  list-style-type: none;
-}
-.check img
-{
-    height: 3rem;
-}
+    box-shadow: 0px 0px 8px ;
+    
+ }
+ 
+ 
+     .shop-head {
+         text-align: center;
+ 
+         h1 {
+             @extend .display-xl-48-dekstop-only;
+             padding: 0.25em 0;
+         }
+     }
+ 
+ 
+     .bottom-line {
+         margin: auto;
+         height: 0.5rem;
+ 
+         width: 7rem;
+         background-color: $primary-brand;
+         border-radius: 0.25rem;
+     }
+    
+     .productimage {
+        
+         width: 10rem;
+         height: 20%;
+         padding: 1em;
+        
+     }
+    
+ 
+     .leftSideCart{
+         
+         display: flex;
+         justify-content: center;
+         justify-content: space-around;
+         align-items: center;
+         align-content: center
+     }
 
-.accordion {
-    padding: auto;
-    // background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-   
-  }
-  .accordion span
-  {
-    float: right;
-  }
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-//   .active, .accordion:hover {
-//     background-color: #ccc;
-//   }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    border: 1px solid black;
-  }
 
-  .shopping-cart img
-  {
-    width: 61%;
-    border: 1px solid transparent;
-   
-  }
-.cart-btn {
-  padding: 2rem 2rem 2rem 0;
-}
-  .cart-btn button
-      {
-        color: black;
+     .quantityWrapper {
+      display: flex;
+      align-items: center;
+     
+    
+      button {
         height: 2rem;
-        width: 2rem; 
+        width: 2rem;
         border-radius: 50%;
+        margin: 0.5em;
+      }
+    }
+     .cartBtn{
+         @extend .quantityWrapper;
+     }
+     .Outerwrap{
+         display: flex;
+         
+        
+     }
+     .outer{
+         padding: 2em;
+     }
+     .innerwrap{
+         display: flex;
+         align-items: center;
+         
+         img{
+             padding: 0.25em;
+         }
+     }
+ 
+     
+     .checkOut{
+         background-color: $primary-brand;
+         color: $white;
+         border-radius: 1.75em;
+         padding: 0.25em 2em;
+         border: none;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 247px;
+         position: relative;
+         left: 9rem;
+         img{
+             padding: 0.25em 0.5em;
+         }
+     }
+ 
+     .prod-Summary{
+         display: flex;
+         justify-content: center;
+         justify-content: space-between;
+         align-items: center;
+         padding: 2rem;
+
+         li{
+          list-style-type: none;
+         }
+     }
+     .price-val{
+         visibility: hidden;
+     }
+
+
+
+
+      .accordion {
+        padding: auto;
+        // background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 2em;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        border: 1px solid #D1D3D6;
+        display: flex;
+       justify-content: space-between;
+      }
+      .accordion span
+      {
+        float: right;
       }
 
-    .cart-input
-    {
- 
-      padding: 0.5rem;
-      width: 4rem;
-      border-radius: 10%;
-    }
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        border: 1px solid black;
+      }
+ }
 
- 

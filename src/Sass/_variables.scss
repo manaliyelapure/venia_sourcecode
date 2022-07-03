@@ -1,21 +1,44 @@
+
+   /* Colors: */
+   $primary-d1: #172BC4;
+   $primary-m1: #336DFF;
+   $primary-brand: #1F39FF;
+   $primary-l1: #3D84FF;
+   $gray-d2: #181C24;
+   $gray-d1: #535965;
+   $gray-m1: #91959C;
+   $gray-l2: #B5B7BC;
+   $gray-l1: #E5E5E7;
+   $white: #FFFFFF;
+   $positive-2: #12805C;
+   $positive-1: #268E6C;
+   $negative-2: #C9252D;
+   $negative-1: #D7373F;
+   $unnamed-color-172026: #172026;
+   $pink:pink;
+
+
+
 :root {
 
     /* Colors: */
-    --primary-d1: #172BC4;
-    --primary-m1: #336DFF;
-    --primary-brand: #1F39FF;
-    --primary-l1: #3D84FF;
-    --gray-d2: #181C24;
-    --gray-d1: #535965;
-    --gray-m1: #91959C;
-    --gray-l2: #B5B7BC;
-    --gray-l1: #E5E5E7;
-    --white: #FFFFFF;
-    --positive-2: #12805C;
-    --positive-1: #268E6C;
-    --negative-2: #C9252D;
-    --negative-1: #D7373F;
-    --unnamed-color-172026: #172026;
+    $primary-d1: #172BC4;
+    $primary-m1: #336DFF;
+    $primary-brand: #1F39FF;
+    $primary-l1: #3D84FF;
+    $gray-d2: #181C24;
+    $gray-d1: #535965;
+    $gray-m1: #91959C;
+    $gray-l2: #B5B7BC;
+    $gray-l1: #E5E5E7;
+    $white: #FFFFFF;
+    $positive-2: #12805C;
+    $positive-1: #268E6C;
+    $negative-2: #C9252D;
+    $negative-1: #D7373F;
+    $unnamed-color-172026: #172026;
+    $pink:pink;
+    
     
     /* Font/text values */
     --unnamed-font-family-muli: Muli;
@@ -160,4 +183,15 @@
     line-height: var(--unnamed-line-spacing-32);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--gray-d2);
+    }
+
+
+    //custom classess//
+    .py-1
+    {
+      padding: 1em 0;
+    }
+  .py-2
+    {
+        padding: 2em 0;
     }

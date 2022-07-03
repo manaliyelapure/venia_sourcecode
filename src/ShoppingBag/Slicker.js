@@ -1,42 +1,45 @@
-import React from "react";
+
+import React, { Component } from "react";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import img1 from "../Assets/img-1.png";
+import img2 from '../Assets/img-2.png';
+import img3 from '../Assets/img-3.png';
+import img4 from '../Assets/img-4.png';
 
 
 
-export default function SimpleSlider() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
-  return (
-   <React.Fragment>
-   <h1>Recently Viewed</h1>
-    <Slider {...settings}>
-  
-      <div>
-        <h3>1</h3>
+
+export default class MultipleItems extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 4
+    };
+    return (
+      <div className="aem-Grid aem-Grid--12 view">
+        <h2> Recently Viewed </h2>
+        <Slider {...settings}>
+          <div className="aem-GridColumn aem-GridColumn--default--3">
+           <img src={img1}/>
+          </div>
+          <div className="aem-GridColumn aem-GridColumn--default--3">
+          <img src={img1}/>
+          </div>
+          <div className="aem-GridColumn aem-GridColumn--default--3">
+          <img src={img1}/>
+          </div>
+          <div className="aem-GridColumn aem-GridColumn--default--3">
+          <img src={img1}/>
+          </div>
+          
+        </Slider>
       </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
-    </Slider>
-    </React.Fragment>
-  );
+    );
+  }
 }

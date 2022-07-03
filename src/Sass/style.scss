@@ -1,5 +1,5 @@
 a{
-    text-decoration: none
+    text-decoration: none;
 }
 @import '../Sass/variables';
 @import '../Components/Header/Navbar';
@@ -9,11 +9,13 @@ a{
 @import '../containers/ProductList';
 @import '../ShoppingBag/shoppingCart';
 @import '../containers/productDetails';
-@import '../Sass/mobile';
-@import '../Sass/tablet';
 @import '../containers/productComponent';
 @import '../Sass/mixins';
 @import '../Components/Banner/Banner';
+@import '../containers/Pagination';
+@import '../Sass/mobile';
+@import '../Sass/tablet';
+
 
 
 *{
@@ -22,3 +24,4 @@ a{
     box-sizing: border-box;
     // font-family: 'Mulish', sans-serif;
 }
+

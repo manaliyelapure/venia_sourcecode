@@ -12,7 +12,7 @@ function Cart() {
         <Sidebar/>
       </div>
 
-      <div className="aem-GridColumn aem-GridColumn--default--9">
+      <div className="aem-GridColumn aem-GridColumn--default--9  prod-list">
         <ProductListing />
         
       </div>

@@ -3,12 +3,11 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 
 import ProductComponent from "./ProductComponent";
-// import SideBar from "./SideBar";
+
 
 
 const ProductPage = () => {
-  // const products = useSelector((state) => state.allProducts.products);
-  // const dispatch = useDispatch();
+  
   const [products,setProducts] = useState([]);
   const fetchProducts = async () => {
     const response = await axios
