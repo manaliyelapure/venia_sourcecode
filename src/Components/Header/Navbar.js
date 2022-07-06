@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
    <React.Fragment>
-   <header role="banner" id="header">
+   <header role="header" id="header">
      <div className="headerOuter">
 
        <button className="burger" onClick={slider}>
@@ -46,31 +46,31 @@ const Header = () => {
 
        <nav role="navigation">
          <ul className={isActive ? "nav-links nav-active" : "nav-links"}>
-           <li aria-label="See Shop Categories" className="desktopHide borderBottomHead">Shop Categories</li>
+           <li aria-label="Shop Categories" className="desktopHide borderBottomHead">Shop Categories</li>
            <li>
              <a href="" aria-label="See women products">
                Women
              </a>
            </li>
            <li>
-             <a href="" aria-label="See men products">
+             <a href="" aria-label="men products">
                Men
              </a>
            </li>
            <li>
-             <a href="" aria-label="See Smart Gear products">
+             <a href="" aria-label="Smart Gear products">
                Smart Gear
              </a>
            </li>
            <li>
-             <a href="" aria-label="See Accessories">
+             <a href="" aria-label="Accessories">
                Accessories
              </a>
            </li>
 
            <div className="bottomLinks desktopHide">
              <img src={user} />
-             <a href="#" aria-label="See User Account">Account</a>
+             <a href="#" aria-label="User Account">Account</a>
            
            </div>
          </ul>
@@ -91,7 +91,7 @@ const Header = () => {
            Search
          </label>
          <img src={user} className="mobileHide" />
-         <a href='#' aria-label="Go to Sign in" className="mobileHide">Sign in</a>
+         <a href='#' aria-label="Sign in" className="mobileHide">Sign in</a>
 
          <Link to="/venia-site/shoppingcart">
            <img src={shoppingBag} />

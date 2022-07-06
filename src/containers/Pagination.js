@@ -34,7 +34,7 @@ const Pagination = ({ showperpage, onPaginationChange, total }) => {
 
     return (
         <div className="page">
-            <ul>
+            <ul className="pagewrap">
                 <li><button onClick={() => onButtonClick("prev")}><img src={cleft} alt="" /></button></li>
                 <li><span>1</span></li>
                 <li><span>2</span></li>

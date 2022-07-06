@@ -46,6 +46,7 @@ const ProductDetails = (props) => {
 
 
   return (
+    <section>
     <div className="aem-Grid aem-Grid--12">
       {selectedProduct.title ? (
         <div className="ui placeholder segment">
@@ -53,7 +54,7 @@ const ProductDetails = (props) => {
             <div className="ui vertical divider"></div>
             <div className=" middle aligned row">
               <div className="aem-Grid aem-Grid--12">
-                <div className="aem-GridColumn aem-GridColumn--phone--6  aem-GridColumn--tablet--12 aem-GridColumn--default--6">
+                <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--6">
                   <div className="column-lp">
                     <div className="aem-Grid aem-Grid--12">
                       <div className="aem-GridColumn aem-GridColumn--default--4">
@@ -98,41 +99,50 @@ const ProductDetails = (props) => {
                     <h3 className="ui brown block header">{selectedProduct.category}</h3>
                     <p>{selectedProduct.description}</p>
                     <hr />
-                    <div className="aem-Grid aem-Grid--12 row-data">
+                    <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12 row-data">
 
                       <Rating />
                     </div>
-
-                    <div className="aem-Grid aem-Grid--12 row-data">
-                      <h2>color</h2>
+                    <div className="size">
+                    <h2>color</h2>
+                    <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12 row-data">
+                  
                       <span><img src={Swatch01} alt='' className="blue" /></span>
                       <span><img src={Swatch02} alt='' className="pink" /></span>
                       <span><img src={Swatch03} alt='' className="black" /></span>
                       <span><img src={Swatch04} alt='' className="grey" /></span>
 
                     </div>
-                    <div className="aem-Grid aem-Grid--12 row-data">
-                      <h2>Size</h2>
+                    </div>
+                    <div className="size">
+                    <h2>Size</h2>
+                    <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12 datarowsec">
+                      
                       <button>XS</button>&nbsp;  &nbsp;
                       <button>S</button>&nbsp;  &nbsp;
                       <button>M</button>&nbsp;  &nbsp;
                       <button>L</button>&nbsp;  &nbsp;
                       <button>XL</button>&nbsp;  &nbsp;
                     </div>
-                    <div className="aem-Grid aem-Grid--12 data">
-                      <h2>Quantity</h2>
+
+                    </div>
+                    <div className="size">
+                    <h2>Quantity</h2>
+                    <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12 data">
+                      
                       <img src={pluscircle} />
                       <button>1</button>
                       <img src={minuscircle} />
+                    </div>
                     </div>
 
                     <div className="ui-vertical-animated-button" tabIndex="0">
                       <div className="hidden content">
                         <i className="shop icon"></i>
                       </div>
-                      <div className="visible-content" onClick={() => addProduct(selectedProduct)}>Add to Cart</div>
+                      <div className="visible-content" onClick={() => addProduct(selectedProduct)}><span>Add to Cart</span></div>
                     </div>
-                    <div className="aem-Grid aem-Grid--12">
+                    <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12">
                       <div className="share">
                         <img src={heart} /> <span>Save</span>
                         <img src={share2}/> <span>Share</span>
@@ -143,20 +153,21 @@ const ProductDetails = (props) => {
                 </div>
               </div>
               <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12">
-                <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--6 description">
+                <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--7 description">
 
                   <h1>{selectedProduct.title}</h1>
                   <h3>Description</h3>
                   <p>{selectedProduct.description}</p>
                 </div>
-                <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--6 details">
-                  <h3>Details</h3>
+                <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--5 details">
+                  
                   <div className="aem-Grid aem-Grid--12 product-details">
-                    <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--3">
+                  <h3>Details</h3>
+                    <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--6">
                       <img src={slack} /><span>Sweat-wicking</span>
 
                     </div>
-                    <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--3">
+                    <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--6">
                       <img src={wind} /><span>Breathable</span>
 
                     </div>
@@ -166,11 +177,11 @@ const ProductDetails = (props) => {
 
 
                   <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12 product-details">
-                    <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--3">
+                    <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--6">
                       <img src={feather} /><span>Lightweight fabric</span>
 
                     </div>
-                    <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--3">
+                    <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--6">
                       <img src={layers} /><span>69% nylon, 31% lycra</span>
 
                     </div>
@@ -185,6 +196,7 @@ const ProductDetails = (props) => {
         <div>...Loading</div>
       )}
     </div>
+    </section>
   );
 };
 

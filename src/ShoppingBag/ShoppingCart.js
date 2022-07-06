@@ -7,13 +7,14 @@ import trash2 from "../Assets/trash-2.svg";
 import heart from "../Assets/heart.svg";
 import { useSelector } from "react-redux";
 import Slicker from '../ShoppingBag/Slicker';
+import checkout from '../Assets/checkout.png';
 
 
 
 function ShoppingCart() {
   
   const shoppingbagitem = useSelector((Value) => Value.handlecartSlice.items);
-
+  
   return (
     <section className="shopCart customContainer">
       <div className="aem-Grid aem-Grid--12 shop-head">
@@ -32,26 +33,35 @@ function ShoppingCart() {
         {shoppingbagitem.map((val) => {
           return (
             <React.Fragment>
-              <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 leftSideCart">
-                <div className="shopping-cart">
+              <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 leftSideCart">
+                <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12  shopping-cart">
                   <img src={val.image} className="productimage" />
                 </div>
-
-                <div className="aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--default--4 details-pricing">
-                  <h1>{val.title}</h1>
+                <div className="aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--default--7 ">
+                <div className="aem-Grid aem-Grid--12 price-button">
+                <div className=" aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--default--6 py-1 details-pricing">
+                  <h4>{val.title}<br/></h4>
                   <p>Size : Medium</p>
                   <p>Color : Storm</p>
                   <p>${val.price}</p>
                 </div>
 
-                <div className="Outerwrap">
-                  <div className="py-1 cartBtn">
+
+
+
+                <div className="aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--default--6  py-1 cartBtn">
                     <button>-</button>
                     <div className="quantity">1</div>
                     <button>+</button>
                   </div>
+                  </div>
 
-                  <div className="outer">
+                </div>
+
+                <div className="Outerwrap">
+                 
+
+                  <div className=" aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--default--2  outer">
                     <div className="innerwrap">
                       <img src={edit2} />
                       <span> Edit item</span>
@@ -71,11 +81,11 @@ function ShoppingCart() {
 
           );
         })}
+  
+      
 
-
-
-
-        <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 summary">
+        <div className="aem-Grid aem-Grid--12">
+        <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 summary">
 
 
           <div className="prod-Summary">
@@ -105,7 +115,7 @@ function ShoppingCart() {
           </div>
 
           <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--4 check">
-            <button className="checkOut"><img src={lock} />CHECKOUT</button>
+            <img src={checkout}/>
           </div>
           <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--4">
             <img src={PP_BTN} />
@@ -113,32 +123,42 @@ function ShoppingCart() {
 
 
         </div>
-      </div>
-
-
-
-      <div className="aem-Grid aem-Grid--12">
-        <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--8 py-1">
+        </div>
+         
+        <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--7">
           
 
           <button class="accordion">Estimate your Shipping <span>shipping to 91001 <img src={chevrondown} /> </span></button>
-          <div className="panel">
+          <div className="panel aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 " >
             <p>Lorem ipsum...</p>
           </div>
 
           <button class="accordion">Enter a Coupon Code<span>20%discount applied <img src={chevrondown} /></span></button>
-          <div className="panel">
+          <div className="panel aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 ">
             <p>Lorem ipsum...</p>
           </div>
 
           <button class="accordion">Apply Gift Card </button>
-          <div className="panel">
+          <div className="panel aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12">
             <p>Lorem ipsum...</p>
           </div>
 
 
         </div>
+
+
+
+
+
+
       </div>
+     
+      
+
+
+     
+      
+     
 
       {/* <div className='aem-Grid aem-Grid--12'>
         <Slicker />
@@ -148,5 +168,3 @@ function ShoppingCart() {
 }
 
 export default ShoppingCart;
-
-

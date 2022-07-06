@@ -25,8 +25,8 @@ const ProductComponent = ({products}) => {
     const { id, title, image, price } = product;
     let path = `/venia-site/products/${id}`;
     return (
-    
-      <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--6 aem-GridColumn--tablet--6" key={id}>
+      
+      <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--6 aem-GridColumn--tablet--6 compo-1" key={id}>
         <Link to={path}>
           <div className="ui link cards">
             <div className="card">

@@ -102,7 +102,7 @@ a {
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-s-14- {
+.regular-heading-s-14-, .visible-content {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-bold);
@@ -112,7 +112,7 @@ a {
   color: var(--unnamed-color-172026);
 }
 
-.regular-body-l-20-, .row-data h2, .data h2 {
+.regular-body-l-20-, .size h2, .row-data h2, .data h2, .datarowsec h2 {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -122,7 +122,7 @@ a {
   color: var(--unnamed-color-172026);
 }
 
-.regualr-body-m-16-, header .nav-links a, header .endHeader label, header .endHeader a, .footer-first, .footer-first li, .herobanner h3, .herobanner p, .Attribute-first p, .Attribute-first h4, .attribute-sec h4, .attribute-four h4, .card, .header, .meta price, .meta {
+.regualr-body-m-16-, header .nav-links a, header .endHeader label, header .endHeader a, .footer-first, .footer-first li, .herobanner h3, .herobanner p, .Attribute-first p, .Attribute-first h4, .attribute-sec h4, .attribute-four h4, .shopCart .prod-Summary, .shopCart .prod-Summary li, .shopCart .price-val, .card, .header, .meta price, .meta {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -132,7 +132,7 @@ a {
   color: var(--unnamed-color-172026);
 }
 
-.regular-body-s-14-, .footer-bottom, .footer-bottom p, .ui brown block header, .visible-ontent {
+.regular-body-s-14-, .footer-last, .footer-bottom a, .shopCart .outer, .shopCart .innerwrap span, .ui brown block header {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -325,27 +325,21 @@ footer {
   display: inline;
 }
 
-.footer-bottom {
-  list-style-type: none;
+.footer-last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem;
-  margin: auto;
+  padding: 1em;
 }
 
-.footer-bottom li a {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0.5rem;
+.footer-bottom a {
+  padding-right: 0.5em;
   color: black;
 }
 
@@ -5609,10 +5603,13 @@ footer {
   margin-top: 6em;
 }
 
+.listwrapper {
+  position: relative;
+}
+
 .shopCart .summary {
+  border: 1px solid grey;
   margin: auto;
-  -webkit-box-shadow: 0px 0px 8px;
-          box-shadow: 0px 0px 8px;
 }
 
 .shopCart .shop-head {
@@ -5632,7 +5629,7 @@ footer {
 }
 
 .shopCart .productimage {
-  width: 10rem;
+  max-width: 8rem;
   height: 20%;
   padding: 1em;
 }
@@ -5676,7 +5673,7 @@ footer {
 }
 
 .shopCart .outer {
-  padding: 2em;
+  padding: 1em;
 }
 
 .shopCart .innerwrap {
@@ -5686,34 +5683,18 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.shopCart .innerwrap img {
-  padding: 0.25em;
-}
-
-.shopCart .checkOut {
-  background-color: #1F39FF;
-  color: #FFFFFF;
-  border-radius: 1.75em;
-  padding: 0.25em 2em;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 247px;
-  position: relative;
-  left: 9rem;
 }
 
-.shopCart .checkOut img {
-  padding: 0.25em 0.5em;
+.shopCart .innerwrap img {
+  width: 1.5em;
+  padding: 0.25em;
+}
+
+.shopCart .check img {
+  height: 3rem;
 }
 
 .shopCart .prod-Summary {
@@ -5772,6 +5753,12 @@ footer {
   border: 1px solid black;
 }
 
+.shopCart .price-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header {
   color: black;
 }
@@ -5803,28 +5790,26 @@ footer {
   height: 50%;
 }
 
-.visible-ontent {
-  width: 30%;
-  border-radius: 40%;
+.size h2 {
+  margin-right: 25em;
 }
 
-.ui-vertical-animated-button {
-  width: 19.75rem;
-  border-radius: 3rem;
+.visible-content {
+  border: none;
   background-color: #1F39FF;
-  padding: 0.5em;
-  margin-top: 1rem;
+  border-radius: 1.75em;
   text-align: center;
-  position: relative;
-  left: 1rem;
-  color: white;
+  vertical-align: middle;
+  width: 19.875rem;
+  height: 2.5rem;
+  color: #FFFFFF;
+  margin: 1em;
+  text-align: center;
 }
 
-.visible-ontent {
-  text-align: center;
+.visible-content span {
   position: relative;
-  left: 20%;
-  font-weight: bold;
+  top: 20%;
 }
 
 .blue {
@@ -5832,7 +5817,7 @@ footer {
   width: 4rem;
   background-color: blue;
   border-radius: 20%;
-  margin: 1em;
+  margin: 0.25em;
 }
 
 .pink {
@@ -5840,7 +5825,7 @@ footer {
   width: 4rem;
   background-color: pink;
   border-radius: 20%;
-  margin: 1em;
+  margin: 0.25em;
 }
 
 .grey {
@@ -5848,7 +5833,7 @@ footer {
   width: 4rem;
   background-color: grey;
   border-radius: 20%;
-  margin: 1em;
+  margin: 0.25em;
 }
 
 .black {
@@ -5856,14 +5841,14 @@ footer {
   width: 4rem;
   background-color: black;
   border-radius: 20%;
-  margin: 1em;
+  margin: 0.25em;
 }
 
 .row-data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem;
+  padding: 0.25em;
 }
 
 .row-data h2 {
@@ -5878,12 +5863,11 @@ footer {
 
 .data {
   position: relative;
-  right: 25%;
+  right: 20%;
 }
 
 .data h2 {
   font-weight: 600;
-  margin-right: 10rem;
 }
 
 .data > button {
@@ -5892,14 +5876,27 @@ footer {
   border-radius: 10%;
 }
 
-.data > img {
-  padding: 1rem 1rem 0 1rem;
+.datarowsec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.25em;
+}
+
+.datarowsec h2 {
+  font-weight: 600;
+}
+
+.datarowsec button {
+  height: 2.5rem;
+  width: 4rem;
+  border-radius: 20%;
 }
 
 .share {
   width: 19.75rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1em;
 }
 
 .description {
@@ -5910,11 +5907,6 @@ footer {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 3rem;
-}
-
-.details {
-  padding-top: 4rem;
 }
 
 .details h3 {
@@ -5948,6 +5940,10 @@ footer {
 
 .image {
   width: 100%;
+}
+
+.compo-1 {
+  padding: 1em;
 }
 
 .banner {
@@ -5988,8 +5984,21 @@ footer {
   bottom: 25%;
 }
 
-.page ul li {
+.pagewrap {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
   list-style-type: none;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+.pagewrap li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0.5em;
 }
 
 /*===========================NavBAr=======================*/
@@ -6085,7 +6094,7 @@ footer {
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-172026);
   }
-  .regular-heading-s-14- {
+  .regular-heading-s-14-, .visible-content {
     font-family: var(--unnamed-font-family-muli);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-bold);
@@ -6094,7 +6103,7 @@ footer {
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-172026);
   }
-  .regular-body-l-20-, .row-data h2, .data h2 {
+  .regular-body-l-20-, .size h2, .row-data h2, .data h2, .datarowsec h2 {
     font-family: var(--unnamed-font-family-muli);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-normal);
@@ -6103,7 +6112,7 @@ footer {
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-172026);
   }
-  .regualr-body-m-16-, header .nav-links a, header .endHeader label, header .endHeader a, .footer-first, .footer-first li, .herobanner h3, .herobanner p, .Attribute-first p, .Attribute-first h4, .attribute-sec h4, .attribute-four h4, .card, .header, .meta price, .meta {
+  .regualr-body-m-16-, header .nav-links a, header .endHeader label, header .endHeader a, .footer-first, .footer-first li, .herobanner h3, .herobanner p, .Attribute-first p, .Attribute-first h4, .attribute-sec h4, .attribute-four h4, .shopCart .prod-Summary, .shopCart .prod-Summary li, .shopCart .price-val, .card, .header, .meta price, .meta {
     font-family: var(--unnamed-font-family-muli);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-normal);
@@ -6112,7 +6121,7 @@ footer {
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-172026);
   }
-  .regular-body-s-14-, .footer-bottom, .footer-bottom p, .ui brown block header, .visible-ontent {
+  .regular-body-s-14-, .footer-last, .footer-bottom a, .shopCart .outer, .shopCart .innerwrap span, .ui brown block header {
     font-family: var(--unnamed-font-family-muli);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-normal);
@@ -6177,6 +6186,7 @@ footer {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    width: 7rem;
   }
   header .hideLogo {
     display: none;
@@ -6224,12 +6234,34 @@ footer {
   .col-lp {
     display: none;
   }
+  .data {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .ui-vertical-animated-button {
+    width: 13rem;
+  }
+  .visible-content {
+    width: 100%;
+  }
   /*-----footer-----------*/
   .f-bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer-last {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-last img {
+    width: 20%;
+    margin: auto;
   }
   .footer-first {
     -webkit-box-orient: vertical;
@@ -6267,6 +6299,28 @@ footer {
   /*------------product-listing----------*/
   .prod-list {
     margin-top: 10em;
+  }
+  .listwrapper {
+    padding: 0.2em;
+  }
+  /*---------------product component------------*/
+  .header {
+    color: black;
+  }
+  /*----------pagination----------*/
+  .pagewrap {
+    width: 100%;
+  }
+  /*--------shoppingcart---------*/
+  .shopCart .checkOut {
+    position: relative;
+    left: 2rem;
+  }
+  .shopCart .checkOut img {
+    padding: 0.25em 0.5em;
+  }
+  .outer {
+    display: none;
   }
 }
 

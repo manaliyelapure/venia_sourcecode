@@ -43,40 +43,51 @@ h1{
     height: 50%;
 }
 
-  .visible-ontent
-  {
-    width: 30%;
-    border-radius: 40%;
-  }
-  .ui-vertical-animated-button
-  {
-    width: 19.75rem;
-    border-radius: 3rem;
-    
-    background-color: #1F39FF;
-    padding: 0.5em;
-    
-    margin-top: 1rem;
-    text-align: center;
-    position: relative;
-    left: 1rem;
-    color: white
-   
-  }
-  .visible-ontent {
-   @extend .regular-body-s-14-;
-    text-align: center;
-    position: relative;
-    left: 20%;
-    font-weight: bold;
+.size h2
+{
+  @extend .regular-body-l-20-;
+  margin-right: 25em;
 }
+
+
+  .visible-content
+  {
+    border: none;
+    background-color: $primary-brand;
+    border-radius: 1.75em;
+    text-align: center;
+    vertical-align: middle;
+    @extend .regular-heading-s-14-;
+    width: 19.875rem;
+    height: 2.5rem;
+    color: $white;
+    margin: 1em;
+    text-align: center;
+    
+    span{
+      position: relative;
+      top: 20%;
+    }
+  }
+
+//   .visible-content {
+//    @extend .regular-body-s-14-;
+//     text-align: center;
+//     position: relative;
+//     left: 20%;
+//     font-weight: bold;
+//     display: flex;
+//     flex-direction: column;
+//     color: $white;
+//     margin: 0.5em
+// }
 .blue
 {
   height: 2.5rem;
   width: 4rem;
   background-color: blue;
   border-radius: 20%;
-  margin: 1em;
+  margin: 0.25em;
 }
 
 .pink
@@ -85,7 +96,7 @@ h1{
   width: 4rem;
   background-color: pink;
   border-radius: 20%;
-  margin: 1em;
+  margin: 0.25em;
 }
 
 .grey
@@ -94,7 +105,7 @@ h1{
   width: 4rem;
   background-color: grey;
   border-radius: 20%;
-  margin: 1em;
+  margin: 0.25em;
 }
 
 .black
@@ -103,13 +114,13 @@ h1{
   width: 4rem;
   background-color: black;
   border-radius: 20%;
-  margin: 1em;
+  margin: 0.25em;
 }
 
 .row-data
 {
     display: flex;
-    padding: 1rem;
+    padding: 0.25em;
      
   h2{
     @extend .regular-body-l-20-;
@@ -128,12 +139,12 @@ h1{
 .data
 {
     position: relative;
-    right: 25%;
+    right: 20%;
 
     h2{
       @extend .regular-body-l-20-;
       font-weight: 600;
-      margin-right: 10rem;
+      // margin-right: 10rem;
     }
 }
 .data > button
@@ -142,22 +153,43 @@ h1{
     width: 8rem; 
     border-radius: 10%;
 }
-.data > img
+// .data > img
+// {
+//      padding: 0.25em 0.25em 0 0.25em;
+// }
+.datarowsec
 {
-     padding: 1rem 1rem 0 1rem;
+    display: flex;
+    padding: 0.25em;
+     
+  h2{
+    @extend .regular-body-l-20-;
+    font-weight: 600;
+  }
 }
+
+.datarowsec button
+{
+  height: 2.5rem;
+  width: 4rem;
+  border-radius: 20%;
+  // margin: 1em;
+  // position: relative;
+  // left: 1rem;
+}
+
+
 .share{
     width: 19.75rem;
     text-align: center;
-    margin-top: 2rem;
-    
-    
+    margin-top: 1em;
+  
    
-    
     span{
       @extend .regular-heading-m-16-;
-    
+      
       }
+      
      
 }
 
@@ -167,7 +199,7 @@ h1{
   display: flexbox;
   flex-direction: row;
   justify-content: space-around;
-  padding: 3rem;
+
   h1{
     @extend  .display-l-36- ;
   }
@@ -177,8 +209,8 @@ h1{
 }
 
 .details{
-  padding-top: 4rem;
-  h3{
+  // padding-top: 4rem;
+   h3{
     @extend .regular-heading-m-16-;
     font-weight: 600;
     position: relative;

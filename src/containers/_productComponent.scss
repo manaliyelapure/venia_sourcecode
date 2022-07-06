@@ -10,7 +10,7 @@
 .header, .meta price , .meta
    {
     @extend .regualr-body-m-16-;
-   
+     
     font-weight: 600;
    }
 
@@ -33,3 +33,7 @@
     width: 100%;
 }
 
+.compo-1
+{
+    padding: 1em;
+}

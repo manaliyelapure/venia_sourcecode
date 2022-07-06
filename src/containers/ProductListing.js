@@ -24,7 +24,7 @@ const ProductPage = () => {
 
   console.log("Products :", products);
   return (
-    <div className="aem-Grid aem-Grid--12">
+    <div className="aem-Grid aem-Grid--12 listwrapper">
      
       <ProductComponent products={products} />
     </div>
