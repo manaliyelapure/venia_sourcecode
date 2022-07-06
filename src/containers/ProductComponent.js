@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import heart from '../Assets/heart.svg';
 import Pagination from '../containers/Pagination';
 
-const ProductComponent = ({products}) => {
+const ProductComponent = ({products,filtercomponent}) => {
   const [showperpage] = useState(6)
 
     const [pagination, stePegination] = useState({
@@ -21,13 +21,37 @@ const ProductComponent = ({products}) => {
 
     }
 
+    const onFilterSelect = (e) => {
+
+      console.log('onFilterSelect', filtercomponent);
+
+      filtercomponent(e.target.value);
+
+  }
+
+
+
   const renderList = products.slice(pagination.start, pagination.end).map((product) => {
     const { id, title, image, price } = product;
     let path = `/venia-site/products/${id}`;
     return (
-      
-      <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--6 aem-GridColumn--tablet--6 compo-1" key={id}>
+    
+      <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--6 aem-GridColumn--tablet--6" key={id}>
+
+
+
+
+
         <Link to={path}>
+{/* 
+        <select name="" id="" onChange={onFilterSelect}>
+
+<option value="Sort by list">Sort by list</option>
+
+<option value="category">Sort by Price</option>
+
+</select> */}
+
           <div className="ui link cards">
             <div className="card">
               <div className="image">
@@ -52,11 +76,19 @@ const ProductComponent = ({products}) => {
 
     );
   });
-  return <>{renderList} <div className="page-funtion">
+return(
+    <>{renderList} <div className="page-funtion">
 
   <Pagination showperpage={showperpage} onPaginationChange={onPaginationChange} />
   
-  </div></>;
+  </div></> 
+) 
+
+
+
+
+ 
+  
 };
 
 export default ProductComponent;

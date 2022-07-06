@@ -22,11 +22,28 @@ const ProductPage = () => {
     fetchProducts();
   }, []);
 
+  const [sort, setSort] = useState()
+
+  const onfilterChange = (filter) => {
+
+    console.log("onfilter", sort);
+
+//     if (filter) {
+
+//       const result = initialDataCat.sort((a, b) => a.price - b.price);
+
+//       console.log(initialDataCat);
+
+//       return setSort(result);
+// } 
+}
+
   console.log("Products :", products);
   return (
     <div className="aem-Grid aem-Grid--12 listwrapper">
      
-      <ProductComponent products={products} />
+      <ProductComponent products={products} filtercomponent={ onfilterChange} />
+
     </div>
   );
 };
