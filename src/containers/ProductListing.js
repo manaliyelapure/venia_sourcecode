@@ -3,19 +3,24 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 
 import ProductComponent from "./ProductComponent";
+import { Loading } from "./Loading";
 
 
 
-const ProductPage = () => {
-  
-  const [products,setProducts] = useState([]);
+const ProductPage = ({sidebarTogglecopy, showsidebar}) => {
+
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(false);
   const fetchProducts = async () => {
+    setLoading(true);
     const response = await axios
+ 
       .get("https://fakestoreapi.com/products")
       .catch((err) => {
         console.log("Err: ", err);
       });
     setProducts(response.data);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -28,23 +33,31 @@ const ProductPage = () => {
 
     console.log("onfilter", sort);
 
-//     if (filter) {
+    if (filter) {
 
-//       const result = initialDataCat.sort((a, b) => a.price - b.price);
+      const result = products.sort((a, b) => a.price - b.price);
 
-//       console.log(initialDataCat);
+      console.log(products);
 
-//       return setSort(result);
-// } 
-}
+      return setSort(result);
+    }
+  }
 
   console.log("Products :", products);
+ 
   return (
+   
+     <React.Fragment>
+        {loading ? <Loading /> : ""}
     <div className="aem-Grid aem-Grid--12 listwrapper">
-     
-      <ProductComponent products={products} filtercomponent={ onfilterChange} />
+      
+    <ProductComponent products={products} filtercomponent={onfilterChange} sidebarTogglecopy={sidebarTogglecopy}
+        showsidebar={showsidebar}  />
 
-    </div>
+  </div>
+     </React.Fragment>
+  
+    
   );
 };
 

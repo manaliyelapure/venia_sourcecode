@@ -255,11 +255,49 @@
 
 /*-------------Sidebar-------------*/
 
+//    .herobanner {
+//         display: none;
+//     }
 
-    .herobanner {
+   .herobanner{
+    width: 100vw;
+    
+    
+   }
+  .filterhide img {
+    margin-right: 0.5em;
+    
+  }
+
+   .filter-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+   .cross_icon{
+    
+    display: block;
+    // position: relative;
+    // left: 80%;
+}
+.sidebar-demo{
+    margin-top: 50%;
+    
+}
+     
+    .sideBarToggle {
         display: none;
-    }
-   
+        transition: transform 0.8s ease-in;
+        transform: translateX(-140%);
+    
+      }
+    
+      .sideBar-active {
+        transform: translateX(0%);
+        display: block;
+      }
+  
 /***********product-details*****/
 .col-lp
 {
@@ -274,6 +312,12 @@
     
 }
 
+.details 
+{
+  display: flex;
+  flex-direction: row;
+}
+
 .ui-vertical-animated-button
   {
     width: 13rem;
@@ -283,7 +327,23 @@
 .visible-content{
     width: 100%;
 }
+.product-details{
+    text-align: center;
+    justify-content: center;
+}
+.column-lp img{
+    margin: 0;
+}
+.price-button{
+    flex-flow: row wrap;
+}
 
+
+.main-details{
+    
+    position: relative;
+    right: 5%;
+}
 /*-----footer-----------*/
 .f-bottom
 {
@@ -353,15 +413,36 @@
 {
     color: black;
 }
+.result{
+    text-align: center;
+}
+
+#dropbox{
+    width: 50%;
+    position: relative;
+    left: 8em;
+    padding: 0.25%;
+    margin-top: 2em;
+}
+.filterhide
+{
+    display: block;
+
+    position: relative;
+    top: 4.5rem;
+    right: 8rem;
+}
 
 /*----------pagination----------*/
 .pagewrap{
     width: 100%;
+    text-align: center;
+    justify-content: center;
     
 }
 /*--------shoppingcart---------*/
 .shopCart .checkOut{
- 
+    font-size: 20px;
     position: relative;
     left: 2rem;
     img{

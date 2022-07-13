@@ -5,7 +5,7 @@
 
 .herobanner h3 {
     @extend .regualr-body-m-16-;
-    // margin-right: 10rem;
+    
     font-weight: 600;
     text-align: left;
     margin: 1rem;
@@ -19,12 +19,12 @@
 .Attribute-first {
     padding: 1rem;
     
-    line-height: 2rem;
+   
     margin-left: auto;
     text-align: left;
 
     input {
-        margin: 1.5rem;
+        margin: 1em;
     }
     p {
      @extend .regualr-body-m-16-;
@@ -35,25 +35,29 @@
 
     h4 {
        @extend .regualr-body-m-16-;
-        // margin-right: 10rem;
+        
         font-weight: 600;
         
     }
    
 }
+.cross_icon{
+    display: none;
+}
+
 
 .attribute-sec {
-    padding: 2rem;
+    padding: 1em;
     margin-right: 1rem;
-    line-height: 2rem;
+   
     text-align: left;
     input {
-        margin: 1.5rem;
+        margin: 1em;
     }
 
     h4 {
         @extend .regualr-body-m-16-;
-        // margin-right: 10rem;
+        
         font-weight: 600;
         
     }
@@ -62,26 +66,26 @@
 }
 
 .attribute-third {
-    padding: 2rem;
-    margin-right: 1rem;
-    line-height: 1rem;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    
     text-align: left;
-
+   
 }
 
 .attribute-four {
-    padding: 2rem;
-    margin-right: 1rem;
-    line-height: 2rem;
+    padding: 0.5em;
+    margin-right: 0.5em;
+   
     text-align: left;
     input {
-        margin: 1.5rem;
+        margin: 1em;
        
     }
 
     h4 {
         @extend .regualr-body-m-16-;
-        // margin-right: 10rem;
+       
         font-weight: 600;
     }
 
@@ -90,8 +94,8 @@
 
 .Row1 {
     display: flex;
-    padding: 1em;
-    // margin-right: 2rem;
+    padding: 0.5em;
+   
 }
 
 .button-row {
@@ -105,72 +109,72 @@
 .R1 {
 
     @extend .button-row;
-    background-color: #172026;
+    background-color:  $gray-d2;
 }
 
 .R2 {
     @extend .button-row;
-    background-color: #FFFFFF;
-    border: #DFE1E2;
+    background-color: $white;
+    border:  $gray-l2;
    
 }
 
 .R3 {
     @extend .button-row;
-    background-color: #2D9D78;
+    background-color:  $positive-1;
     
 
 }
 
 .R4 {
     @extend .button-row;
-    background-color: #FDBA5E;
+    background-color: $yellowish;
    
 }
 
 .Row2 {
     display: flex;
-    padding: 1em;
+    padding: 0.5em;
     
 }
 
 .R5 {
     @extend .button-row;
-    background-color: #4F5ADA;
+    background-color:    $primary-l1;
     
 }
 
 .R6 {
     @extend .button-row;
-    background-color: #E34850;
+    background-color:$negative-1;
     
 
 }
 
 .R7 {
     @extend .button-row;
-    background-color: #6408D3;
+    background-color:  $purple;
     
 }
 
 .R8 {
     @extend .button-row;
-    background-color: #F9009A;
+    background-color:  $pink-d;
    
 }
 
 .Row3 {
     display: flex;
-    padding: 1em;
+    padding: 0.5em;
   
 }
 
 .R9 {
     @extend .button-row;
-    background-color: #EB7327;
+    background-color:$orange;
     }
 
 .R10 {
     @extend .button-row;
-    background-color: #BF1919;
+    background-color: $negative-2;
     }

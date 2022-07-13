@@ -11,28 +11,36 @@ function Footer() {
                 <div className='aem-Grid aem-Grid--default--12 aem-Grid--tablet--6 aem-Grid--phone--1 demo-Grid footer-first '>
                     <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--1 demo-GridColumn demo-GridColumn--image'>
                         <h4>Account</h4>
-                        <a href='#'>  <li>Sign In</li></a>
-                        <a href='#'>  <li>Register</li></a>
-                        <a href='#'>   <li>Order Status</li></a>
+                        <ul>
+                        <li><a href='#' aria-label='go to sign in'></a>Sign In</li>
+                         <li><a href='#' aria-label='click on register'> </a>Register</li>
+                         <li><a href='#' aria-label='check order status' ></a>Order Status</li>  
+                        </ul>
                     </div>
                     <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--1 demo-GridColumn demo-GridColumn--image'>
                         <h4>About Us</h4>
-                        <a href='#'>   <li>Our Story</li></a>
-                        <a href='#'>  <li>Careers</li></a>
+                        <ul>
+                        <li><a href='#' aria-label='check details'> </a>Our Story</li>
+                        <li> <a href='#'aria-label='careers'></a>Careers</li>
+                        </ul> 
                     </div>
                     <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--1 demo-GridColumn demo-GridColumn--image'>
                         <h4>Help</h4>
-                        <a href='#'>   <li>Contact Us</li></a>
-                        <a href='#'>  <li>Order Status</li></a>
-                        <a href='#'>  <li>Returns</li></a>
+                        <ul>
+                         <li><a href='#'aria-label='contact us'></a>Contact Us</li>  
+                         <li><a href='#'aria-label='check order status'></a>Order Status</li> 
+                         <li><a href='#'aria-label='returns'> </a>Returns</li>
+                        </ul>
                     </div>
                     <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--1 demo-GridColumn demo-GridColumn--image'>
                         <h4>Follow Us!</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                         <div className='img-logo'>
-                            <a href='#' aria-label='instagram-logo'><li><img src={instagram} /></li></a>
-                            <a href='#' aria-label='facebook-logo'><li><img src={facebook} /></li></a>
-                            <a href='#' aria-label='twitter-logo'><li><img src={twitter} /></li> </a>
+                        <ul>
+                           <li><img src={instagram} alt="instagram-icon"/> <a href='#' aria-label='instagram-logo'></a></li>
+                            <li><img src={facebook} alt="facebook-icon"/><a href='#' aria-label='facebook-logo'></a></li>
+                            <li><img src={twitter} alt="twitter-icon"/><a href='#' aria-label='twitter-logo'> </a></li>
+                        </ul>
                         </div>
                     </div>
                 </div>
@@ -40,14 +48,14 @@ function Footer() {
               
                     <div className='footer-last'>
 
-                        <img src={VENIA2} />
+                        <img src={VENIA2}  alt="venia-logo"/>
 
 
                         <p>© Company Name Address Ave, City Name, State ZIP</p>
 
                         <div className='footer-bottom'>
-                            <a href='#'>Terms of Use</a>
-                            <a href='#'>Privacy Policy</a>
+                            <a href='#' aria-label='see terms of use'>Terms of Use</a>
+                            <a href='#' aria-label='check privacy policy'>Privacy Policy</a>
                         </div>
                     </div>
                

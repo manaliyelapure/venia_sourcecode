@@ -1,6 +1,26 @@
 a{
     text-decoration: none;
 }
+
+@font-face {
+    font-family: Muli;
+    src: url(../Assets/muli/muli/Muli-Black.ttf);
+    src: url(../Assets/muli/muli/Muli-BlackItalic.ttf);
+    src: url(../Assets/muli/muli/Muli-Bold.ttf);
+    src: url(../Assets/muli/muli/Muli-BoldItalic.ttf);
+    src: url(../Assets/muli/muli/Muli-ExtraBold.ttf);
+    src: url(../Assets/muli/muli/Muli-ExtraBoldItalic.ttf);
+    src: url(../Assets/muli/muli/Muli-ExtraLight.ttf);
+    src: url(../Assets/muli/muli/Muli-ExtraLightItalic.ttf);
+    src: url(../Assets/muli/muli/Muli-Italic.ttf);
+    src: url(../Assets/muli/muli/Muli-Light.ttf);
+    src: url(../Assets/muli/muli/Muli-Regular.ttf);
+    src: url(../Assets/muli/muli/Muli-LightItalic.ttf);
+    src: url(../Assets/muli/muli/Muli-SemiBold.ttf);
+    src: url(../Assets/muli/muli/Muli-SemiBoldItalic.ttf);
+   
+}
+@import '../Sass/mixins';
 @import '../Sass/variables';
 @import '../Components/Header/Navbar';
 @import '../Components/Footer/Footer';
@@ -10,7 +30,7 @@ a{
 @import '../ShoppingBag/shoppingCart';
 @import '../containers/productDetails';
 @import '../containers/productComponent';
-@import '../Sass/mixins';
+
 @import '../Components/Banner/Banner';
 @import '../containers/Pagination';
 @import '../Sass/mobile';
@@ -22,6 +42,6 @@ a{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // font-family: 'Mulish', sans-serif;
+   
 }
 

@@ -34,51 +34,7 @@ footer
         display: inline;
     }
 }
-// .img-logo li
-// {
-//   display: inline;
-// }
-// .demohide  {
-//     visibility: hidden;
-// }
 
-
-// .f-bottom{
-//     display: flex;
-//     border-top: 1px solid black;
-   
-    
-   
-// }
-
-
-// .footer-bottom
-//  {
-
-//     @extend  .regular-body-s-14-;
-//       list-style-type: none; 
-      
-//       justify-content: center;
-//       justify-content: space-between;
-//       padding: 2rem;
-//       margin: auto;
-     
-   
-    
-//      li a{
-//          flex-direction: column;
-//         justify-content: space-between;
-//         padding: 0.5rem;
-//         color: black;
-        
-//     }
-  
-
-//     p{
-//         @extend  .regular-body-s-14-;
-//     }
-
-// }
 
 
 .footer-last{
@@ -92,4 +48,5 @@ footer
     @extend  .regular-body-s-14-;
     padding-right: 0.5em;
     color: black;
+    
     }

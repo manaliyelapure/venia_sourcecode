@@ -6,6 +6,8 @@ import shoppingBag from "../../Assets/shopping-bag.svg";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import ShoppingCart from '../../ShoppingBag/ShoppingCart';
+
+
 const Header = () => {
 
   const st = useSelector((state) => {
@@ -31,17 +33,17 @@ const Header = () => {
 
   return (
    <React.Fragment>
-   <header role="header" id="header">
+   <header id="header">
      <div className="headerOuter">
 
-       <button className="burger" onClick={slider}>
+       <button aria-label="burger-button" className="burger" onClick={slider}>
          <div id="line1"></div>
          <div id="line2"></div>
          <div id="line3"></div>
        </button>
 
        <a href="/venia-site/">
-         <img src={venia} className={displayIn ? 'hideLogo' : 'logo'} />
+         <img src={venia} className={displayIn ? 'hideLogo' : 'logo'} alt="main-venia logo"/>
        </a>
 
        <nav role="navigation">
@@ -69,7 +71,7 @@ const Header = () => {
            </li>
 
            <div className="bottomLinks desktopHide">
-             <img src={user} />
+             <img src={user}  alt="user-icon"/>
              <a href="#" aria-label="User Account">Account</a>
            
            </div>
@@ -85,16 +87,16 @@ const Header = () => {
            id="inputSearch"
 
          />
-         <button onClick={hideInput} aria-label="Click to search products" className="btn"><img src={search} /></button>
+         <button onClick={hideInput} aria-label="Click to search products" className="btn"><img src={search}  alt="search-icon"/></button>
 
          <label for="searchBar" className="mobileHide">
            Search
          </label>
-         <img src={user} className="mobileHide" />
+         <img src={user} alt="user-icon" aria-label="user-icon" className="mobileHide" />
          <a href='#' aria-label="Sign in" className="mobileHide">Sign in</a>
 
          <Link to="/venia-site/shoppingcart">
-           <img src={shoppingBag} />
+          <img src={shoppingBag} aria-label="check shoppingbag items" alt="shoppingicon"/>
            
          </Link>
         <span>{totalcartitem}</span>
@@ -111,3 +113,6 @@ const Header = () => {
 
 
 export default Header;
+
+
+

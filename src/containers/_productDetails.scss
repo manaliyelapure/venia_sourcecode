@@ -5,7 +5,7 @@
 
 .column-lp img
 {
-    width: 100%;
+    max-width: 100%;
     height: 50%;
     border: 1px solid transparent;
     margin: 1em;
@@ -14,8 +14,8 @@
 
 .column-rp
 {
-    margin:-4rem;
-    padding: 6rem;
+   
+    text-align: left;
     line-height: 2em;
   p{
     @extend  .regular-heading-m-16-;
@@ -39,8 +39,8 @@ h1{
 }
 .col-lp img
 {
-    width: 35%;
-    height: 50%;
+    width: 28%;
+    height: 30%;
 }
 
 .size h2
@@ -49,7 +49,45 @@ h1{
   margin-right: 25em;
 }
 
+.AddToCartWrapper {
+  img {
+    margin: 1em;
+  }
+}
 
+.AddToCartWrapperInner {
+  text-align: center;
+  width: 19.875rem;
+}
+
+.detailsWrapper {
+  display: flex;
+  flex-direction: row;
+
+  p {
+    padding: 0.5em 0;
+
+  }
+
+  img {
+    padding: 0.5em;
+  }
+}
+
+.detailsInner {
+  @extend  .regular-body-s-14-;
+  display: flex;
+  align-items: center;
+}
+
+.desc2 {
+  padding: 0.5em 0;
+}
+.main-details{
+    
+      position: relative;
+      right: 46%;
+}
   .visible-content
   {
     border: none;
@@ -70,22 +108,12 @@ h1{
     }
   }
 
-//   .visible-content {
-//    @extend .regular-body-s-14-;
-//     text-align: center;
-//     position: relative;
-//     left: 20%;
-//     font-weight: bold;
-//     display: flex;
-//     flex-direction: column;
-//     color: $white;
-//     margin: 0.5em
-// }
+
 .blue
 {
   height: 2.5rem;
   width: 4rem;
-  background-color: blue;
+  background-color: $primary-d1;
   border-radius: 20%;
   margin: 0.25em;
 }
@@ -94,7 +122,7 @@ h1{
 {
   height: 2.5rem;
   width: 4rem;
-  background-color: pink;
+  background-color: $pink;
   border-radius: 20%;
   margin: 0.25em;
 }
@@ -103,7 +131,7 @@ h1{
 {
   height: 2.5rem;
   width: 4rem;
-  background-color: grey;
+  background-color:  $gray-m1;
   border-radius: 20%;
   margin: 0.25em;
 }
@@ -112,7 +140,7 @@ h1{
 {
   height: 2.5rem;
   width: 4rem;
-  background-color: black;
+  background-color: $unnamed-color-172026;
   border-radius: 20%;
   margin: 0.25em;
 }
@@ -132,19 +160,16 @@ h1{
   height: 2.5rem;
   width: 4rem;
   border-radius: 20%;
-  // margin: 1em;
-  // position: relative;
-  // left: 1rem;
+
 }
 .data
 {
-    position: relative;
-    right: 20%;
+   
 
     h2{
       @extend .regular-body-l-20-;
       font-weight: 600;
-      // margin-right: 10rem;
+  
     }
 }
 .data > button
@@ -153,10 +178,7 @@ h1{
     width: 8rem; 
     border-radius: 10%;
 }
-// .data > img
-// {
-//      padding: 0.25em 0.25em 0 0.25em;
-// }
+
 .datarowsec
 {
     display: flex;
@@ -173,9 +195,7 @@ h1{
   height: 2.5rem;
   width: 4rem;
   border-radius: 20%;
-  // margin: 1em;
-  // position: relative;
-  // left: 1rem;
+
 }
 
 
@@ -196,6 +216,7 @@ h1{
 
 .description 
 {
+  text-align: left;
   display: flexbox;
   flex-direction: row;
   justify-content: space-around;
@@ -209,13 +230,22 @@ h1{
 }
 
 .details{
-  // padding-top: 4rem;
+  padding-top: 3em;
    h3{
     @extend .regular-heading-m-16-;
     font-weight: 600;
-    position: relative;
-    right: 45%;
+    
   }
+}
+  .btn-sub{
+    border-radius: 50%;
+    width: 1.5rem;
+  }
+  .btn-count{
+    width: 8em;
+    padding: 0.5em;
+    border: 1px solid $black;
+    border-radius: 20%;
 }
   
 .product-details

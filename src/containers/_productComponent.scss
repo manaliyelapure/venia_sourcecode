@@ -15,7 +15,10 @@
    }
 
 
-    
+    .filterhide
+    {
+        display: none;
+    }
    
 .image
 {
@@ -26,3 +29,32 @@
 {
     padding: 1em;
 }
+.dropdown{
+    float: right;
+    p{
+        @extend .regular-heading-m-16-;
+    }
+    .desktophide{
+        display: none;
+    }
+}
+#dropbox
+{
+   padding: 0.5rem;
+   border-radius:0.5rem;
+   float: right;
+   margin-right: 5em ;
+   
+   width: 12%;
+    
+}
+.results{
+
+float: left;
+margin-left: 6em;
+margin-bottom: 1em;
+    h4{
+      @extend .regular-heading-m-16-;
+      margin: 1em;
+    }
+  }

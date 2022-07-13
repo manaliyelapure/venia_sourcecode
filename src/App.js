@@ -14,9 +14,10 @@ function App() {
     <div className="App">
       <Navbar />
          <Routes>
-           <Route path="/venia-site/" element={<Cart/>}/>
+           
            <Route path="/venia-site/products/:productId" element={<ProductDetails/>} />
            <Route path="/venia-site/shoppingcart" element={<ShoppingCart/>} />
+           <Route path="/" element={<Cart/>}/>
        </Routes>
      
       <Footer />

@@ -14,7 +14,7 @@ function Banner
             <div className='banner-bottom'></div>
           </span>
 
-          <img src={banner} />
+          <img src={banner} alt="banner-image" aria-label='banner-img'/>
 
 
         </div>
