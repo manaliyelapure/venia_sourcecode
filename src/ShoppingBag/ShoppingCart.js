@@ -50,7 +50,7 @@ function ShoppingCart() {
   return (
     <section className="shopCart customContainer">
       <div className="aem-Grid aem-Grid--12 shop-head">
-        <h1 className="shopCart">Your Shopping Bag</h1>
+        <h2 className="shopCart">Your Shopping Bag</h2>
         <div className="bottom-line"></div>
       </div>
 

@@ -32,12 +32,12 @@ const ProductDetails = (props) => {
 
 
   let [num, setNum] = useState(0);
-  let incNum = () => {
+  let incrementNum = () => {
     if (num < 10) {
       setNum(Number(num) + 1);
     }
   };
-  let decNum = () => {
+  let decrementNum = () => {
     if (num > 0) {
       setNum(num - 1);
     }
@@ -145,11 +145,10 @@ const ProductDetails = (props) => {
                       <div className="size">
                         <h2>Quantity</h2>
                       
-                        <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 '>
-                          <button className='btn-sub' onClick={decNum}>-</button>
-
-                          <input type="text" role="button" className='btn-count' value={num} onChange={handleChange} style={{ textAlign: "center" }} />
-                          <button className='btn-sub' onClick={incNum}>+</button>
+                        <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 cart-btn'>
+                          <button aria-label="decrement no" onClick={decrementNum}>-</button>
+                          <input type="text" role="button" className='cart-input' value={num} onChange={handleChange}  />
+                          <button aria-label="increment no" onClick={incrementNum}>+</button>
                         </div>
 
                       </div>

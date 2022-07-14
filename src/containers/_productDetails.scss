@@ -237,15 +237,26 @@ h1{
     
   }
 }
-  .btn-sub{
-    border-radius: 50%;
-    width: 1.5rem;
-  }
-  .btn-count{
-    width: 8em;
-    padding: 0.5em;
-    border: 1px solid $black;
-    border-radius: 20%;
+
+
+.cart-btn button {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0;
+}
+
+.cart-btn input {
+  width: 100px;
+  height: 40px;
+  margin: 0 0.75rem;
+  border: 2px solid $gray-m1;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.cart-btn {
+  margin-bottom: 1.5rem;
 }
   
 .product-details
